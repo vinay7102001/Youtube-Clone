@@ -1,0 +1,65 @@
+@import '../../base';
+
+.sidebar{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 20px;
+  background-color: $black-primary;
+  transition: 0.75s;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  &.open{
+    transform: translateX(0);
+  }
+
+  li{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+
+    &:hover{
+      background-color: $border-color;
+    }
+    
+  }
+
+  hr{
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width:$breakpoint-medium){
+  .sidebar{
+    width:60px;
+    li{
+      span{
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width:$breakpoint-samll){
+  .sidebar{
+    width:60px;
+    position: fixed;
+    top:8vh;
+    left: 0;
+    // display: none;
+    transform: translateX(-100%);
+
+    
+  }
+}

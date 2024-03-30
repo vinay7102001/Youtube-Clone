@@ -1,0 +1,36 @@
+@import '../../base';
+
+.login_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $black-primary;
+
+  img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  button{
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    background-color: $black-secondary;
+    transition: 0.75s;
+
+    &:hover{
+      opacity: 0.2;
+    }
+  }
+
+  p{
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+  }
+}

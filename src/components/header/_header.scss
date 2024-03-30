@@ -1,0 +1,110 @@
+// @import url('../../_base.scss');
+@import '../../base';
+
+header{
+  border: 1px solid black;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $black-primary;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+
+  img{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .header_input{
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+    height:35px;
+    border:1px solid $border-color;
+    border-radius: 10px;
+    // align-items: center;
+
+    input{
+      width:100%;
+      font-size: 1.5rem;
+      padding-left: 10px;
+      background: transparent;
+      border:none;
+      color: $text-color;
+
+      &:focus{
+        outline: none;
+      }
+    }
+
+    button{
+      height: 100%;
+      width: 50px;
+      border: none;
+      background: $black-primary;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      &:hover{
+        background-color: $black-secondary;
+      }
+    }
+  }
+
+  .icons{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    
+    BsFillGrid3X3GapFill:hover{
+      cursor: pointer;
+    }
+
+    .profile_photo{
+      width:25px;
+      height:25px;
+      border-radius: 50%;
+      object-fit: contain;
+      object-position: center;
+      margin: 0;
+    }
+  }
+
+  .hmburger{
+    display: none;
+  }
+}
+
+@media (max-width:$breakpoint-samll){
+  header{
+    img{
+      display: none;
+    }
+
+    .header_input{
+      flex:0.9
+    }
+
+    .hmburger{
+      display: block;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+
+    .icons{
+      width:30px;
+
+      .icon1, .icon2 {
+        display: none;
+      }
+    }
+  }
+}

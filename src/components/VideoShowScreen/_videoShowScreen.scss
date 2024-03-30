@@ -1,0 +1,14 @@
+@import '../../base';
+
+.row_container{
+  // border: 1px solid white;
+  height: 92vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: $black-primary;
+
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}

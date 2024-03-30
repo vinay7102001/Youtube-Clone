@@ -1,0 +1,9 @@
+
+.searchScreen{
+  margin-top: 30px;
+  overflow: auto;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}

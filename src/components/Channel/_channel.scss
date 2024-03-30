@@ -1,0 +1,25 @@
+@import '../../base';
+
+.Channel_video_row{
+  overflow: scroll;
+
+  .channel_info_in_channel_screen{
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    z-index: 1005;
+  }
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+@media (max-width:$breakpoint-samll) {
+  .Channel_video_row{
+    
+    .channel_info_in_channel_screen{
+      position: static;
+    }
+  }
+}

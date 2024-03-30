@@ -1,0 +1,15 @@
+.app_container{  
+  display: flex;
+  // justify-content: space-between;.
+  gap: 30px;
+  height: 92vh;
+  // position: relative;
+  // overflow: scroll;
+  margin-top: 8vh;
+  overflow: hidden;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+

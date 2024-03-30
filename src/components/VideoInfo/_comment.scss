@@ -1,0 +1,75 @@
+@import '../../base';
+
+
+div{
+
+  .add_commnet{
+    display: flex;
+    // justify-content:;
+    align-items: center;
+  
+    img{
+      flex:0.03;
+      height: 40px;
+      width: 40px;
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+
+    input{
+      flex: 0.98;
+      height: 30px;
+      border: none;
+      border-bottom: 1px solid gray;
+      background-color: transparent;
+      font-size: 1.5rem;
+      color: $text-color;
+
+      &:focus{
+        outline: none;
+      }
+    }
+
+    button{
+      padding: 7px 5px;
+      font-size: 1.2rem;
+      color: $text-color;
+      border: none;
+      background-color: $black-secondary;
+    }
+  }
+
+  .old_comments{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: center;
+
+    img{
+      flex:0.03;
+      height: 40px;
+      width: 40px;
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+
+    div{
+      .commenter_name{
+        // line-height: 0;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        margin-top: 5px;
+      }
+
+      .comment_text{
+        font-size: 1.3rem;
+        margin-top: 5px;
+      }
+      .description{
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

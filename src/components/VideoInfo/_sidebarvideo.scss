@@ -1,0 +1,102 @@
+
+.sidebar_video{
+  margin-top:10px;
+
+  .img_p{
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    // flex-direction: column;
+    
+    .image1{
+      height: 80px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 10px;
+
+      &.image2{
+        height: 150px;
+      }
+    }
+
+    .image3{
+      height: 80px;
+      // width: 100%;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 50%;
+
+      &.image4{
+        height: 150px;
+      }
+    }
+
+
+
+    .time{
+      height: 15px;
+      background-color: black;
+      padding: 1px;
+      display: inline;
+      position: relative;
+      border: none;
+      // bottom: 25px;
+      right: 30px;
+      bottom: 10px;
+      // left: 75%;
+    }
+  }
+
+    h4{
+      // width: 150px;
+      width: 100%;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      // display: inline;
+    }
+
+    p{
+      margin: 0;
+      padding: 0;
+    }
+
+    .views_data{
+      font-size: 1.2rem;
+      margin-top: 10px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+
+    .channel_name{
+      font-size: 1.2rem;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+
+    }
+
+    .thumbnail_data_channel{
+      .Channel_discription{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    
+    }
+
+    &:hover{
+      cursor: pointer;
+    }
+}
+
+

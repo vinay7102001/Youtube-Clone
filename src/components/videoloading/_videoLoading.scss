@@ -1,0 +1,12 @@
+.video_scolling{
+  // content: wrapped;
+  height: 100vh;
+  // overflow: auto;
+  // height: 1000px;
+  // overflow-y: scroll;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
