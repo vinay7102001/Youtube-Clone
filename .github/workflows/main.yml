@@ -1,0 +1,36 @@
+name : firebase deployment
+
+on:
+push:
+  branches:
+    - main
+
+
+jobs:
+  deploy: # job id it should be uniqu in this case it 'deploy'
+    name: Build and Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name : get the source code
+        uses : actions/checkout@v4
+
+      - name : install node
+        uses : actions/setup-node@v4
+        with : 
+          node-version: '20'
+
+      - name : install node package
+        run : npm i
+
+      - name : build
+        run : npm run build
+        env :
+          CI : false
+
+      - name : deploy to Firebase
+        users : w9jds/firebase-action@master
+        with : 
+          args : deploy --only hosting
+        env:
+        FIREBASE_TOKEN:${{ secrets.FIREBASE_TOKEN }}
