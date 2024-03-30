@@ -1,9 +1,9 @@
 name : firebase deployment
 
 on:
-push:
-  branches:
-    - main
+  push:
+    branches:
+      - main
 
 
 jobs:
