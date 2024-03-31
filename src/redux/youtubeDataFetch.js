@@ -20,6 +20,9 @@ export const Ytdata = async dispatch => {
         maxResults: 20,
         pageToken: store.getState().yotubeReducer.nextPageToken,
         regionCode: 'IN'
+      },
+      headers: {
+        Authorization: `Bearer ${store.getState().reducers.accessToken}`,
       }
     })
 
@@ -60,6 +63,9 @@ export const ytSerachData = (keyword) => async (dispatch) => {
         maxResults: 20,
         regionCode: 'IN',
         type: 'video'
+      },
+      headers: {
+        Authorization: `Bearer ${store.getState().reducers.accessToken}`,
       }
     })
     const data = await ytinfo.data
