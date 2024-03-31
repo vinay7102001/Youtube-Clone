@@ -59,7 +59,6 @@ export const ytSerachData = (keyword) => async (dispatch) => {
         q: keyword,
         maxResults: 20,
         regionCode: 'IN',
-
         type: 'video'
       }
     })
