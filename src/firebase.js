@@ -2,23 +2,23 @@
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth'
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyDM-XWTL2lX505l6JPP9IqoCWQY1y2rhqk",
-//   authDomain: "youtubrclonebyvinay.firebaseapp.com",
-//   projectId: "youtubrclonebyvinay",
-//   storageBucket: "youtubrclonebyvinay.appspot.com",
-//   messagingSenderId: "908275577900",
-//   appId: "1:908275577900:web:91d8cc2a7d0ab05f334d89"
-// };
-
 const firebaseConfig = {
-  apiKey: "AIzaSyBJMPTOKFgp1qdkWsPB50pLU8qNX7IPEfg",
-  authDomain: "ytclonevinay.firebaseapp.com",
-  projectId: "ytclonevinay",
-  storageBucket: "ytclonevinay.appspot.com",
-  messagingSenderId: "64454267839",
-  appId: "1:64454267839:web:7e80b1581fe4c9578d070a"
+  apiKey: "AIzaSyDM-XWTL2lX505l6JPP9IqoCWQY1y2rhqk",
+  authDomain: "youtubrclonebyvinay.firebaseapp.com",
+  projectId: "youtubrclonebyvinay",
+  storageBucket: "youtubrclonebyvinay.appspot.com",
+  messagingSenderId: "908275577900",
+  appId: "1:908275577900:web:91d8cc2a7d0ab05f334d89"
 };
+
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBJMPTOKFgp1qdkWsPB50pLU8qNX7IPEfg",
+//   authDomain: "ytclonevinay.firebaseapp.com",
+//   projectId: "ytclonevinay",
+//   storageBucket: "ytclonevinay.appspot.com",
+//   messagingSenderId: "64454267839",
+//   appId: "1:64454267839:web:7e80b1581fe4c9578d070a"
+// };
 
 
 // const firebaseConfig = {
